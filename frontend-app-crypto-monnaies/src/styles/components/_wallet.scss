@@ -1,0 +1,115 @@
+@media screen and (min-width: 0) {
+  .acm-wallet-container {
+    border-top: 2px solid $color-4;
+    border-bottom: 2px solid $color-4;
+    border-left: 1px solid $color-4;
+    border-right: 1px solid $color-4;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: $color-5;
+
+    h2 {
+      text-align: center;
+      border-bottom: 1px dashed $color-4;
+      border-top: 1px dashed $color-4;
+      background: $color-3;
+    }
+
+    .wallet-display {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+
+      .soldeSpan {
+        font-size: 1.1em;
+        text-align: center;
+        background: rgba($color-3, 0.8);
+        padding: 10px;
+        #soldes {
+          margin: 10px;
+          color: $dollar-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.4em;
+          font-weight: bolder;
+          font-style: italic;
+          padding: 2px;
+        }
+      }
+
+      .wallet-currency-container {
+        background: rgba($color-1, 0.4);
+        margin: 20px;
+        padding: 20px;
+
+        .wallet-currency-balance {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          h4 {
+            border-bottom: 2px solid $color-1;
+            padding-bottom: 5px;
+          }
+          .currency-infos {
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 15px 15px 0;
+            font-weight: 900;
+            color: rgba($color-4, 0.8);
+            font-weight: bolder;
+            background: $color-1;
+          }
+        }
+      }
+
+      .wallet-crypto-container {
+        text-align: center;
+        h4 {
+          border-bottom: 2px solid $color-1;
+          padding-bottom: 5px;
+          margin-bottom: 20px;
+        }
+        background: rgba($color-3, 0.4);
+        margin: 20px;
+        margin-top: 0;
+        padding: 20px;
+        .wallet-crypto-infos {
+          text-align: center;
+          margin: 20px;
+        }
+
+        .wallet-crypto-balance {
+          text-align: center;
+          font-size: 1.3em;
+          font-weight: 900;
+          color: $color-3;
+          background: rgba($color-1, 0.8);
+          padding: 10px;
+        }
+      }
+
+      .buy-sell-btn-container {
+        display: flex;
+        gap: 18px;
+
+        .buy-sell-btns {
+          text-align: center;
+          max-width: 150px;
+          border: 1px solid $color-1;
+          padding: 5px;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: rgba($color-1, 0.8);
+            color: $color-5;
+          }
+        }
+      }
+    }
+  }
+}

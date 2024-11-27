@@ -1,0 +1,136 @@
+@media screen and (min-width: 0) {
+  .acm-monCompte-container {
+    border-top: 2px solid $color-4;
+    border-bottom: 2px solid $color-4;
+    border-left: 1px solid $color-4;
+    border-right: 1px solid $color-4;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: $color-5;
+
+    h2 {
+      text-align: center;
+      border-bottom: 1px dashed $color-4;
+      border-top: 1px dashed $color-4;
+      background: $color-3;
+    }
+
+    .id-container {
+      margin: 10px;
+
+      h3 {
+        margin: 10px 5px;
+        padding: 7px 0;
+        border-bottom: 1px solid $color-3;
+      }
+      .modif-id-container {
+        .modif-id {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          margin: 10px 0;
+
+          span {
+            width: 50%;
+            margin-right: 5px;
+          }
+
+          .id-modif-inputs {
+            border: none;
+            border-bottom: 1px solid $color-1;
+            border-radius: 1px;
+            height: 25px;
+            margin: 10px;
+            padding: 7px;
+            text-align: center;
+            transition: box-shadow 0.4s;
+
+            &:focus-within {
+              box-shadow: 0 0 2px rgba($color-4, 0.75);
+            }
+          }
+
+          .id-modif-btn {
+            border: 1px solid $color-1;
+            padding: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+              background: $color-2;
+              color: $color-5;
+            }
+          }
+
+          .update-password-btn {
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+              "Lucida Sans", Arial, sans-serif;
+            background: $color-5;
+            color: $color-1;
+            border: 1px solid $color-1;
+            padding: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+              background: rgba($color-1, 0.8);
+              color: $color-5;
+            }
+          }
+        }
+      }
+    }
+
+    .delete-container {
+      margin: 30px 10px 10px;
+
+      h3 {
+        margin: 10px 5px;
+        padding: 7px 0;
+        border-bottom: 1px solid $color-3;
+      }
+
+      .delete-account {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px 0;
+
+        .delete-btn {
+          padding: 5px;
+          margin: 10px auto;
+          border: 1px solid $color-1;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: $color-2;
+            color: $color-5;
+          }
+        }
+
+        #delete-account-btn {
+          background: $color-3;
+
+          &:hover {
+            background: #b51000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .modif-id-container {
+    margin: 20px auto;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .modif-id-container {
+    width: 50%;
+  }
+}
