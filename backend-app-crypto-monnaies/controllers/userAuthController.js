@@ -70,7 +70,6 @@ const checkPwd = async (req, res, next) => {
       req.body.currentPwd,
       req.user.password
     );
-    console.log(updatedPwd);
     if (updatedPwd) {
       res.send(updatedPwd);
     }
