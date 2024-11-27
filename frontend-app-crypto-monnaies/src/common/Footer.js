@@ -13,7 +13,7 @@ const Footer = () => {
             id="logo"
           />
         </div>
-        <span>par Florian de SIETER</span>
+        <span>par FlodsWeb</span>
       </div>
     </footer>
   );
